@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "579290874791",
+    "firebase_url": "https://scoutbox-ef252.firebaseio.com",
+    "project_id": "scoutbox-ef252",
+    "storage_bucket": "scoutbox-ef252.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579290874791:android:7775d771eddb14d4",
+        "android_client_info": {
+          "package_name": "com.scoutbox.scoutbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579290874791-g1eb0ko5kjgl6dp048t8q809kgfdlef4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuD01jigEo_iT3U28r-SpW8g42siWY34k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
