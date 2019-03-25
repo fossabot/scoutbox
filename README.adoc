@@ -1,0 +1,29 @@
+= scoutbox
+
+
+=== How to run?
+. Clone project
+[source, bash]
+----
+git clone https://github.com/feleko/scoutbox.git
+cd scoutbox
+----
+
+. Install dependencies
+[source, bash]
+yarn install
+
+
+. Download `google-services.json` from firebase console. Place this file in the `android/app/` directory.
+
+. Run
+[source, bash]
+yarn run start
+
+=== Contributors
+link:https://github.com/Buzar9[Buzar9]
+
+link:https://github.com/feleko[feleko]
+
+link:https://github.com/michalzuk[michalzuk]
+
