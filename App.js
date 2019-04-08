@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet } from "react-native";
-import { Provider as PaperProvider, Button } from "react-native-paper";
-import firebase from "react-native-firebase";
-import Login from "./src/Login";
+import {Provider as PaperProvider} from "react-native-paper";
+
+import Navigator from "./src/Navigator";
 
 export default class App extends React.Component {
   constructor() {
@@ -20,46 +19,8 @@ export default class App extends React.Component {
   render() {
     return (
       <PaperProvider>
-        <Login />
+        <Navigator/>
       </PaperProvider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  logo: {
-    height: 120,
-    marginBottom: 16,
-    marginTop: 64,
-    padding: 10,
-    width: 135
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
-  },
-  modules: {
-    margin: 20
-  },
-  modulesHeader: {
-    fontSize: 16,
-    marginBottom: 8
-  },
-  module: {
-    fontSize: 14,
-    marginTop: 4,
-    textAlign: "center"
-  }
-});
