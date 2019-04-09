@@ -1,5 +1,6 @@
-= scoutbox
+image:https://travis-ci.com/feleko/scoutbox.svg?branch=develop["Build Status", link="https://travis-ci.com/feleko/scoutbox"]
 
+= scoutbox
 
 === How to run?
 . Clone project
