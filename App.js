@@ -1,8 +1,7 @@
 import React from "react";
-import { StyleSheet } from "react-native";
-import { Provider as PaperProvider, Button } from "react-native-paper";
-import firebase from "react-native-firebase";
-import Login from "./src/Login";
+import {Provider as PaperProvider} from "react-native-paper";
+
+import Navigator from "./src/Navigator";
 
 export default class App extends React.Component {
   constructor() {
@@ -20,10 +19,8 @@ export default class App extends React.Component {
   render() {
     return (
       <PaperProvider>
-        <Login />
+        <Navigator/>
       </PaperProvider>
     );
   }
 }
-
-
