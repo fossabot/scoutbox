@@ -1,26 +1,28 @@
-import React, {Component} from "react";
-import {View} from "react-native";
-import {Button, HelperText, Text, TextInput, Title} from "react-native-paper";
-import firebase from "react-native-firebase";
-import {emailRegex} from "./const/regex";
+import React, {Component} from 'react';
+import {View} from 'react-native';
+import {Button, HelperText, Text, TextInput, Title} from 'react-native-paper';
+import firebase from 'react-native-firebase';
+import {emailRegex} from './const/regex';
 
 class ResetPassword extends Component {
   state = {
-    email: ""
+    email: '',
   };
 
   resetPassword = () => {
-    firebase.auth()
+    firebase
+      .auth()
       .sendPasswordResetEmail(this.state.email)
       .then(result => {
-        console.log(result)
-      }).catch(err => {
-      console.log(err)
-    });
+        console.log(result);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   validEmail = email => {
-    if (email === "") {
+    if (email === '') {
       return false;
     } else {
       return !emailRegex.test(email);
@@ -39,7 +41,7 @@ class ResetPassword extends Component {
           value={this.state.email}
           onChangeText={text =>
             this.setState({
-              email: text
+              email: text,
             })
           }
         />

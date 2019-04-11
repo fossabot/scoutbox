@@ -1,17 +1,17 @@
-import React, {Component} from "react";
-import {View} from "react-native";
-import {Button, HelperText, Text, TextInput, Title, TouchableRipple} from "react-native-paper";
-import firebase from "react-native-firebase";
-import {emailRegex} from "./const/regex";
+import React, {Component} from 'react';
+import {View} from 'react-native';
+import {Button, HelperText, Text, TextInput, Title, TouchableRipple} from 'react-native-paper';
+import firebase from 'react-native-firebase';
+import {emailRegex} from './const/regex';
 
 class SignIn extends Component {
   state = {
-    email: "",
-    password: ""
+    email: '',
+    password: '',
   };
 
   fieldIsEmpty = () => {
-    return !(this.state.email !== "" && this.state.password !== "");
+    return !(this.state.email !== '' && this.state.password !== '');
   };
 
   loginToApp = () => {
@@ -46,16 +46,11 @@ class SignIn extends Component {
           value={this.state.password}
           onChangeText={text => this.setState({ password: text })}
         />
-        <Button
-          icon="input"
-          mode="contained"
-          onPress={this.loginToApp}
-          disabled={this.fieldIsEmpty()}
-        >
+        <Button icon="input" mode="contained" onPress={this.loginToApp} disabled={this.fieldIsEmpty()}>
           Zaloguj
         </Button>
         <TouchableRipple
-          onPress={() => this.props.navigation.navigate("ResetPassword")}
+          onPress={() => this.props.navigation.navigate('ResetPassword')}
           rippleColor="rgba(0, 0, 0, .32)"
         >
           <Text>Zapomniałem hasła</Text>

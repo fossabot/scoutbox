@@ -1,27 +1,27 @@
-import {createAppContainer, createStackNavigator, createSwitchNavigator} from "react-navigation";
-import SignIn from "./SignIn";
-import Home from "./Home";
-import ResetPassword from "./ResetPassword";
+import {createAppContainer, createStackNavigator, createSwitchNavigator} from 'react-navigation';
+import SignIn from './SignIn';
+import Home from './Home';
+import ResetPassword from './ResetPassword';
 
 const LoginNavigator = createStackNavigator({
   SignIn,
-  ResetPassword
+  ResetPassword,
 });
 
 const AppNavigator = createStackNavigator({
-  Home
+  Home,
 });
 
 const Navigator = createAppContainer(
   createSwitchNavigator(
     {
       Home: AppNavigator,
-      Login: LoginNavigator
+      Login: LoginNavigator,
     },
     {
-      initialRouteName: "Login"
-    }
-  )
+      initialRouteName: 'Login',
+    },
+  ),
 );
 
 export default createAppContainer(Navigator);
