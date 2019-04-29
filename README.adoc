@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffeleko%2Fscoutbox.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffeleko%2Fscoutbox?ref=badge_shield)
+
 image:https://travis-ci.com/feleko/scoutbox.svg?branch=develop["Build Status", link="https://travis-ci.com/feleko/scoutbox"]
 
 = scoutbox
@@ -28,3 +30,7 @@ link:https://github.com/feleko[feleko]
 
 link:https://github.com/michalzuk[michalzuk]
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ffeleko%2Fscoutbox.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ffeleko%2Fscoutbox?ref=badge_large)
